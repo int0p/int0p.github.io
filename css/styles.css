@@ -205,9 +205,9 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
-  margin-bottom: 15px;
   top: 17lh;
-  width: inherit; }
+  width: inherit;
+  border-bottom: 1px dashed lightblue; }
 
 .screen-header__title {
   font-size: 32px;
@@ -361,7 +361,7 @@ body {
 
 main {
   position: relative;
-  top: 130px; }
+  top: 140px; }
 
 h1 {
   font-size: 2.5em; }
