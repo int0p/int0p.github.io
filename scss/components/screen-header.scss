@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontal-space);
-    top:17lh; //TODO 딴방법 찾자,,ㅋㅋ
+    top:22vh; //TODO 딴방법 찾자,,ㅋㅋ
     width: inherit;    //TODO 왜 width: inherit;하면 빠져나가지 ㅋㅋ styles.css에서 해당 component에 margin을 설정하여 margin만큼 빠져나감. 
     border-bottom: 1px dashed lightblue; //TODO rgb값 변수 끌고와서 opacity적용하는 방법
   }
