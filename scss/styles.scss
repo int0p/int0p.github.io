@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset";
+@import "components/status-bar";
+@import "_variables.scss";
+@import "screens/login";
+html{
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  width: $screen-width;
+  height: $screen-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;  
+}
+
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.5em;
+}
+h3{
+  font-size: 1.17em;
+}
+h4{
+  font-size: 1em;
+}
+h5{
+  font-size: .83em;
+}
+
