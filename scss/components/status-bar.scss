@@ -1,7 +1,7 @@
 @import "_variables.scss";
 .status-bar {
     display: flex;
-    position: fixed;
+    // position: fixed; TODO: 이거하면 한쪽으로 쏠리는데 왜일까
     justify-content: center;    
     padding-top: 20px; //TODO 
   }
