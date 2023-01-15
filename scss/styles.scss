@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset";
 @import "components/status-bar";
+@import "components/nav-bar";
 @import "_variables.scss";
 @import "screens/login";
 html{
-  background-color: lightblue;
+  background-color: $bg;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,18 +23,18 @@ body {
 }
 
 h1{
-  font-size: 2em;
+  font-size: $h1;
 }
 h2{
-  font-size: 1.5em;
+  font-size: $h2;
 }
 h3{
-  font-size: 1.17em;
+  font-size: $h3;
 }
 h4{
-  font-size: 1em;
+  font-size: $h4;
 }
 h5{
-  font-size: .83em;
+  font-size: $h5;
 }
 

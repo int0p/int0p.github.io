@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .status-bar {
   display: flex;
+  position: fixed;
   justify-content: center;
   padding-top: 20px; }
 

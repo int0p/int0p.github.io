@@ -7,35 +7,32 @@
         <title>DailyLine/home</title>
       </head>
       <body>
-
-        <div class="status-bar">
-          <div class="status-bar__column">
-            <span>No Service</span>
-            <i class="fas fa-wifi"></i>
-          </div>
-          <div class="status-bar__column">
-            <span>18:43</span>
-          </div>
-          <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fas fa-battery-full"></i>
-            <i class="fas fa-bolt"></i>
-          </div>
-        </div>
-
-        <header class="welcome-header">
-            <h1 class="welcome-header__title">Welcome to DailyLine</h1>
-            <h3 class="welcome-header__text">
-              If you have a DailyLine Account, log in with your email or phone number.
-            </h3>
-        </header>
-
-        <form action="home.html" method="get" id="login-form">
-          <input name="username" type="text" placeholder="Email or phone number" />
-          <input name="password" type="password" placeholder="Password" />
-          <input type="submit" value="Log In" />
-          <a href="#">Find DailyLine Account or Password</a>
-        </form>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <span class="nav__notification">0</span>
+                    <i class="fas fa-chevron-right fa-2x"></i>
+                </a>
+              </li>
+              <li class="nav__btn">
+                <a class="nav__link" href="#">                  
+                  <i class="fas fa-minus fa-2x"></i>
+                </a>
+              </li>
+              <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <span class="nav__notification">1</span>
+                    <i class="fas fa-chevron-right fa-2x"></i>
+                </a>
+              </li>
+              <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fas fa-utensil-spoon fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
           
         <script
         src="https://kit.fontawesome.com/6478f529f2.js"
