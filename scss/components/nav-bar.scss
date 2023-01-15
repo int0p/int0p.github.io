@@ -1,12 +1,13 @@
 @import "_variables.scss";
 .nav {
     position: fixed;
+    z-index: 10;
     width: inherit;
-    height: 4rem;
+    height: 5%;
     background-color: #f9f9fa;
-    padding: 20px 50px;
-    box-sizing: border-box;
+    padding: 10px 10px;    
     border-bottom: 1px solid rgba(121, 121, 121, 0.3);
+    margin-top: $statusbar-height; 
   }
   .nav__list {
     display: flex;
@@ -17,6 +18,7 @@
   .nav__link {
     position: relative;
     color: #2e363e;
+    align-self: center;
   }
   
   .nav__notification {
@@ -34,3 +36,9 @@
     top: 15px;
   }
   
+  .nav__click{
+    background-color: $color-primary; 
+    border: 8px solid $color-primary; 
+    color: white;
+    border-radius: 30%;
+  }

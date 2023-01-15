@@ -1,0 +1,25 @@
+@function badge-state($state){
+    @if($state=='ing'){
+        @return $red;        
+    }
+    @else{
+        @return $green;
+    }
+  }
+  
+.badge {    
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+  }
+.state-ing{
+    background-color: badge-state('ing');
+}
+.state-ed{
+    background-color: badge-state('ed');
+}

@@ -1,27 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset";
+
+@import "_variables";
+
 @import "components/status-bar";
 @import "components/nav-bar";
-@import "_variables.scss";
+@import "components/screen-header";
+@import "components/badge";
+@import "components/linear-record-component";
+
 @import "screens/login";
+*{
+  box-sizing: border-box;
+}
 html{
   background-color: $bg;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh;  
 }
 body {
   font-family: "Open Sans", sans-serif;
+  
   background-color: white;
   width: $screen-width;
   height: $screen-height;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: stretch;  
+  &>:not(:first-child){
+    padding: 20px;    
+  }
 }
-
+main{
+  position: relative;
+  top: 130px;
+}
 h1{
   font-size: $h1;
 }
@@ -36,5 +52,8 @@ h4{
 }
 h5{
   font-size: $h5;
+}
+h6{
+  font-size: $h6;
 }
 

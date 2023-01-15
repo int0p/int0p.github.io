@@ -129,15 +129,20 @@ input:focus {
 
 .status-bar {
   display: flex;
+  position: fixed;
+  width: inherit;
+  z-index: 10;
   justify-content: center;
-  padding-top: 20px; }
+  align-items: center;
+  height: 20px; }
 
 /* 시간표시를 가운데에  두기 위한 hack */
 .status-bar__column {
-  width: 33%; }
+  width: 33%;
+  margin-top: 20px; }
 
 .status-bar__column:first-child span {
-  margin-right: 15px; }
+  margin-left: 20px; }
 
 .status-bar__column:nth-child(2) {
   display: flex;
@@ -146,7 +151,8 @@ input:focus {
 .status-bar__column:last-child {
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  margin-right: 20px; }
 
 /* 시간표시를 가운데에  두기 위한 hack */
 .status-bar__column .fa-battery-full {
@@ -154,12 +160,13 @@ input:focus {
 
 .nav {
   position: fixed;
+  z-index: 10;
   width: inherit;
-  height: 4rem;
+  height: 5%;
   background-color: #f9f9fa;
-  padding: 20px 50px;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(121, 121, 121, 0.3); }
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(121, 121, 121, 0.3);
+  margin-top: 20px; }
 
 .nav__list {
   display: flex;
@@ -168,7 +175,8 @@ input:focus {
 
 .nav__link {
   position: relative;
-  color: #2e363e; }
+  color: #2e363e;
+  align-self: center; }
 
 .nav__notification {
   background-color: lightblue;
@@ -183,6 +191,95 @@ input:focus {
   position: absolute;
   left: 15px;
   top: 15px; }
+
+.nav__click {
+  background-color: #5c3ccc;
+  border: 8px solid #5c3ccc;
+  color: white;
+  border-radius: 30%; }
+
+.screen-header {
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+  top: 17lh;
+  width: inherit; }
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600; }
+
+.screen-header__icons span {
+  margin-left: 25px; }
+
+.badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600; }
+
+.state-ing {
+  background-color: #ff453a; }
+
+.state-ed {
+  background-color: #30d158; }
+
+.linear-record-component {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6em;
+  border-bottom: 2px solid rgba(231, 0, 0, 0.1); }
+
+.linear-record-component__column:first-child {
+  display: flex;
+  align-items: center; }
+
+.linear-record-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px; }
+
+.linear-record-component__title {
+  font-weight: 600;
+  font-size: 22px; }
+
+.linear-record-component__subtitle {
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5); }
+
+.linear-record-component__avatar--xl {
+  width: 80px;
+  height: 80px; }
+
+.linear-record-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px; }
+
+.linear-record-component__title--not-bold {
+  font-weight: 400; }
+
+.linear-record-component__column:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.linear-record-component__time {
+  margin-bottom: 10px;
+  display: block; }
 
 .welcome-header {
   text-align: center;
@@ -221,7 +318,7 @@ input:focus {
 
 #login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 #login-form input:focus {
   border-color: #5c3ccc; }
@@ -229,7 +326,7 @@ input:focus {
 #login-form input[type="submit"] {
   background-color: #5c3ccc;
   color: white;
-  font-size: 1.5em;
+  font-size: 2em;
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px; }
@@ -238,7 +335,10 @@ input:focus {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  font-size: 0.83em; }
+  font-size: 1.2em; }
+
+* {
+  box-sizing: border-box; }
 
 html {
   background-color: lightblue;
@@ -254,22 +354,31 @@ body {
   height: 834px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: stretch; }
+  body > :not(:first-child) {
+    padding: 20px; }
+
+main {
+  position: relative;
+  top: 130px; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2.5em; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 h3 {
-  font-size: 1.17em; }
+  font-size: 1.5em; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 1.3em; }
 
 h5 {
-  font-size: 0.83em; }
+  font-size: 1.2em; }
+
+h6 {
+  font-size: 1.1em; }
 
 /*# sourceMappingURL=styles.css.map */

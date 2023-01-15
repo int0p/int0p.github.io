@@ -1,13 +1,30 @@
 $bg: lightblue;
-$color-primary: #5c3ccc;
+
 $title: 32px;
 
 //screen-size
 $screen-width: 1194px; // ipad pro 11
 $screen-height: 834px; // ipad pro 11
+$statusbar-height: 20px;
 
-$h1:2em;
-$h2:1.5em;
-$h3:1.17em;
-$h4:1em;
-$h5:.83em;
+$h1:2.5em;
+$h2:2em;
+$h3:1.5em;
+$h4:1.3em;
+$h5:1.2em;
+$h6:1.1em;
+
+//color (apple-hig dark: https://developer.apple.com/design/human-interface-guidelines/foundations/color/#specifications)
+$color-primary: #5c3ccc;
+$red: rgb(255,69,58);
+$green: rgb(48,209,88);
+$yellow: rgb(255,214,10);
+$orange: rgb(255,159,10);
+$mint: rgb(99,230,226);
+$teal: rgb(64,200,224);
+$cyan: rgb(100,210,255);
+$blue: rgb(10,132,255);
+$indigo: rgb(94,92,230);
+$purple: rgb(191,90,242);
+$pink: rgb(255,55,95);
+$brown: rgb(172,142,104);

@@ -1,16 +1,20 @@
 @import "_variables.scss";
 .status-bar {
     display: flex;
-    // position: fixed; TODO: 이거하면 한쪽으로 쏠리는데 왜일까
+    position: fixed; //TODO: 이거하면 한쪽으로 쏠리는데 왜일까 (width 안 정해줌)
+    width: inherit;
+    z-index: 10;
     justify-content: center;    
-    padding-top: 20px; //TODO 
+    align-items: center;
+    height: $statusbar-height;    
   }
   /* 시간표시를 가운데에  두기 위한 hack */
   .status-bar__column {
     width: 33%;
+    margin-top: 20px;
   }
   .status-bar__column:first-child span {
-    margin-right: 15px;
+    margin-left: 20px;
   }
   .status-bar__column:nth-child(2) {
     display: flex;
@@ -20,6 +24,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 20px;
   }
   /* 시간표시를 가운데에  두기 위한 hack */
   .status-bar__column .fa-battery-full {

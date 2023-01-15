@@ -1,15 +1,20 @@
 @charset "UTF-8";
 .status-bar {
   display: flex;
+  position: fixed;
+  width: inherit;
+  z-index: 10;
   justify-content: center;
-  padding-top: 20px; }
+  align-items: center;
+  height: 20px; }
 
 /* 시간표시를 가운데에  두기 위한 hack */
 .status-bar__column {
-  width: 33%; }
+  width: 33%;
+  margin-top: 20px; }
 
 .status-bar__column:first-child span {
-  margin-right: 15px; }
+  margin-left: 20px; }
 
 .status-bar__column:nth-child(2) {
   display: flex;
@@ -18,7 +23,8 @@
 .status-bar__column:last-child {
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  margin-right: 20px; }
 
 /* 시간표시를 가운데에  두기 위한 hack */
 .status-bar__column .fa-battery-full {

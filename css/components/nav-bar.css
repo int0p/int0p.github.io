@@ -1,11 +1,12 @@
 .nav {
   position: fixed;
+  z-index: 10;
   width: inherit;
-  height: 4rem;
+  height: 5%;
   background-color: #f9f9fa;
-  padding: 20px 50px;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(121, 121, 121, 0.3); }
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(121, 121, 121, 0.3);
+  margin-top: 20px; }
 
 .nav__list {
   display: flex;
@@ -14,7 +15,8 @@
 
 .nav__link {
   position: relative;
-  color: #2e363e; }
+  color: #2e363e;
+  align-self: center; }
 
 .nav__notification {
   background-color: lightblue;
@@ -29,5 +31,11 @@
   position: absolute;
   left: 15px;
   top: 15px; }
+
+.nav__click {
+  background-color: #5c3ccc;
+  border: 8px solid #5c3ccc;
+  color: white;
+  border-radius: 30%; }
 
 /*# sourceMappingURL=nav-bar.css.map */

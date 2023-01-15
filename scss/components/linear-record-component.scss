@@ -1,0 +1,53 @@
+@import "_variables.scss";
+
+.linear-record-component {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    border-bottom: 2px solid rgba(231, 0, 0, 10%); //TODO rgb값 변수 끌고와서 opacity적용하는 방법 
+  }
+  .linear-record-component__column:first-child {
+    display: flex;
+    align-items: center;
+  }
+  .linear-record-component__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    margin-right: 20px;
+  }
+  .linear-record-component__title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .linear-record-component__subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .linear-record-component__avatar--xl {
+    width: 80px;
+    height: 80px;
+  }
+  .linear-record-component__avatar--sm {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+  }
+  .linear-record-component__title--not-bold {
+    font-weight: 400;
+  }
+  
+  .linear-record-component__column:last-child {
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .linear-record-component__time {
+    margin-bottom: 10px;
+    display: block;
+  }
