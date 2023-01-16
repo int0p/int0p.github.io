@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     height: 6em;
-    border-bottom: 2px solid rgba(231, 0, 0, 10%); //TODO rgb값 변수 끌고와서 opacity적용하는 방법 
+    border-bottom: 2px solid rgba(121, 121, 121, 0.15); //TODO rgb값 변수 끌고와서 opacity적용하는 방법 
   }
   .linear-record-component__column:first-child {
     display: flex;

@@ -36,9 +36,9 @@
   top: 15px; }
 
 .nav__click {
-  background-color: #5c3ccc;
-  border: 15px solid #5c3ccc;
+  background-color: black;
+  border: 14px solid black;
   color: white;
-  border-radius: 30%; }
+  border-radius: 100%; }
 
 /*# sourceMappingURL=nav-bar.css.map */

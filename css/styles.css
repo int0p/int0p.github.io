@@ -196,10 +196,10 @@ input:focus {
   top: 15px; }
 
 .nav__click {
-  background-color: #5c3ccc;
-  border: 15px solid #5c3ccc;
+  background-color: black;
+  border: 14px solid black;
   color: white;
-  border-radius: 30%; }
+  border-radius: 100%; }
 
 .screen-header {
   position: fixed;
@@ -242,7 +242,7 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   height: 6em;
-  border-bottom: 2px solid rgba(231, 0, 0, 0.1); }
+  border-bottom: 2px solid rgba(121, 121, 121, 0.15); }
 
 .linear-record-component__column:first-child {
   display: flex;
