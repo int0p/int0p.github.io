@@ -21,8 +21,7 @@ html{
   height: 100vh;  
 }
 body {
-  font-family: "Open Sans", sans-serif;
-  
+  font-family: "Open Sans", sans-serif;  
   background-color: white;
   width: $screen-width;
   height: $screen-height;
@@ -31,14 +30,39 @@ body {
   justify-content: start;
   align-items: stretch;  
   &>:not(:first-child){
-    padding: 20px; 
-    align-items: center;    
+    padding: 0 20px; 
+    position: relative;
   }
 }
 main{
-  position: relative;
-  top: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: inherit;
+  height: $screen-height - $main--margin-top;     //TODO
+  // background-color: lightgoldenrodyellow;  
+  & > *{
+    position: absolute;
+    padding-top: 10px;
+    height: inherit;    
+  }
+  &>:first-child{    
+    position:fixed;
+    width: $side-width;
+    background-color: white; 
+  }
+  &>:last-child{
+    position:fixed;
+    width: $main-width - 30px;
+    margin-left:$side-width;    
+    background-color: $light-pink;
+    padding: 16px;  //TODO padding...?
+  }
 }
+$statusbar-height: 24px;
+$navbar-height: 44px;
+$header-height: 58px;
+
 h1{
   font-size: $h1;
 }

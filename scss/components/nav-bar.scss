@@ -5,7 +5,7 @@
     width: inherit;
     padding-top: 15px;
     height: $navbar-height + $statusbar-height - 15px; // TODO padding에 의해 증가한만큼 뺌. 뭔가 굉장히 이상함. 
-    background-color: #f9f9fa;
+    background-color: $gray;
     border-bottom: 1px solid rgba(121, 121, 121, 0.3);
     margin-top: $statusbar-height;     
   }

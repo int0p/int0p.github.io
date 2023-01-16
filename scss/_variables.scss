@@ -5,9 +5,12 @@ $title: 32px;
 //screen-size
 $screen-width: 1194px; // ipad pro 11
 $screen-height: 834px; // ipad pro 11
+$side-width: 375px;
+$main-width:809px;
 $statusbar-height: 24px;
 $navbar-height: 44px;
 $header-height: 58px;
+$main--margin-top:150px;
 
 $h1:2.5em;
 $h2:2em;
@@ -30,3 +33,7 @@ $indigo: rgb(94,92,230);
 $purple: rgb(191,90,242);
 $pink: rgb(255,55,95);
 $brown: rgb(172,142,104);
+$gray: rgba(242,242,242,50%);
+
+//color opacity
+$light-pink: rgba(255,55,95,5%);

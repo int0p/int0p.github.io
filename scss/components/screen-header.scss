@@ -8,14 +8,16 @@
     height: $header-height;
     align-items: center;
     margin-top:$navbar-height + $statusbar-height + 22px; //TODO 이게 맞나 싶어 난..
-    padding-bottom: 20px;
     width: inherit;    //TODO 왜 width: inherit;하면 빠져나가지 ㅋㅋ styles.css에서 해당 component에 margin을 설정하여 margin만큼 빠져나감. 
     border-bottom: 1px dashed lightblue; //TODO rgb값 변수 끌고와서 opacity적용하는 방법
+    display: flex;
   }
   .screen-header__title {
     font-size: 32px;
     font-weight: 600;
+    width: 74%;
+    text-align: center;
   }
   .screen-header__icons span {
-    margin-left: 25px;
+    margin-left: 20px;
   }

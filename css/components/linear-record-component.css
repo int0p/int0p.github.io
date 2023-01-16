@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   height: 6em;
-  border-bottom: 2px solid rgba(121, 121, 121, 0.15); }
+  border-bottom: 2px solid rgba(121, 121, 121, 0.15);
+  padding: 16px; }
 
 .linear-record-component__column:first-child {
   display: flex;
