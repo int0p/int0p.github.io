@@ -1,11 +1,12 @@
 .screen-header {
   position: fixed;
-  z-index: 9;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
+  height: 58px;
   align-items: center;
-  padding: var(--horizontal-space);
-  top: 22vh;
+  margin-top: 90px;
+  padding-bottom: 20px;
   width: inherit;
   border-bottom: 1px dashed lightblue; }
 

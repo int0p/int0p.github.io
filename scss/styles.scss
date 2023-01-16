@@ -31,7 +31,8 @@ body {
   justify-content: start;
   align-items: stretch;  
   &>:not(:first-child){
-    padding: 20px;    
+    padding: 20px; 
+    align-items: center;    
   }
 }
 main{

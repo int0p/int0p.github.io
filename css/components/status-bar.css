@@ -6,7 +6,7 @@
   z-index: 10;
   justify-content: center;
   align-items: center;
-  height: 20px; }
+  height: 24px; }
 
 /* 시간표시를 가운데에  두기 위한 hack */
 .status-bar__column {

@@ -1,11 +1,14 @@
+@import "_variables.scss";
+
 .screen-header {
     position: fixed;
-    z-index: 9;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
+    height: $header-height;
     align-items: center;
-    padding: var(--horizontal-space);
-    top:22vh; //TODO 딴방법 찾자,,ㅋㅋ
+    margin-top:$navbar-height + $statusbar-height + 22px; //TODO 이게 맞나 싶어 난..
+    padding-bottom: 20px;
     width: inherit;    //TODO 왜 width: inherit;하면 빠져나가지 ㅋㅋ styles.css에서 해당 component에 margin을 설정하여 margin만큼 빠져나감. 
     border-bottom: 1px dashed lightblue; //TODO rgb값 변수 끌고와서 opacity적용하는 방법
   }

@@ -3,23 +3,26 @@
     position: fixed;
     z-index: 10;
     width: inherit;
-    height: 5%;
+    padding-top: 15px;
+    height: $navbar-height + $statusbar-height - 15px; // TODO padding에 의해 증가한만큼 뺌. 뭔가 굉장히 이상함. 
     background-color: #f9f9fa;
-    padding: 10px 10px;    
     border-bottom: 1px solid rgba(121, 121, 121, 0.3);
-    margin-top: $statusbar-height; 
-    
+    margin-top: $statusbar-height;     
   }
   .nav__list {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;    
   }
 
   .nav__link {
     position: relative;
     color: #2e363e;
-    align-self: center;
+    & i{
+        width:  44px;
+        height: 44px;
+        text-align: center;
+    }
   }
   
   .nav__notification {
@@ -33,13 +36,13 @@
     color: white;
     font-weight: 600;
     position: absolute;
-    left: 15px;
+    left: 23px;
     top: 15px;
   }
   
   .nav__click{
     background-color: $color-primary; 
-    border: 8px solid $color-primary; 
+    border: 15px solid $color-primary; 
     color: white;
     border-radius: 30%;
   }
